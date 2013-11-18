@@ -21,14 +21,14 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Shift+Return exec kdesu gnome-terminal
+bindsym $mod+Shift+Return exec gksu gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-bindsym $mod+Shift+D exec kdesu dmenu_run
+bindsym $mod+Shift+D exec gksu dmenu_run
 
 # change focus
 bindsym $mod+h focus left
