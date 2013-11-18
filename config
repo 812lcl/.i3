@@ -148,8 +148,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # background
-exec feh --bg-scale /home/lcl/Picture/Sky.jpg
-exec conky -c /home/lcl/.conkycolors/conkyrc-cairo-CN
+exec feh --bg-scale /home/lcl-ubuntu/Picture/Mac_book_pro_retina059.jpg
 
 # border
 bindsym $mod+t border normal
