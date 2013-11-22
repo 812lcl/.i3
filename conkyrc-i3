@@ -18,7 +18,6 @@ max_text_width          0
 TEXT
 
 [
-  { "full_text" : ${if_up BAT0}"Battery: ${battery_percent BAT0}% ${battery_bar BAT0}"${else}"No Battery"${endif}, "color" : "\#DC322F" },
   { "full_text" : ${if_up wlan0}"wlan: ${wireless_essid wlan0}${wireless_link_qual_perc wlan0}% ${wireless_link_bar wlan0}"${else}"eth0: ${addr eth0}"${endif}, "color" : "\#ff6600" },
   { "full_text" : ${if_up wlan0}"down:${downspeed wlan0} ${totaldown wlan0}"${else}"down:${downspeed eth0} ${totaldown eth0}"${endif}, "color" : "\#13f6cd" },
   { "full_text" : ${if_up wlan0}"up:${upspeed wlan0} ${totalup wlan0}"${else}"up:${upspeed eth0} ${totalup eth0}"${endif}, "color" : "\#13f6cd" },
