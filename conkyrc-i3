@@ -25,6 +25,7 @@ TEXT
   { "full_text" : "${execpi 8 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'} ${execpi 8 sensors | grep 'Core 1' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'}", "color" : ${if_match ${execpi 8 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'| sed 's/\°C//g'}>80}"\#DC322F"${else}"\#00ff00"${endif}, "min_width" : 25 },
   { "full_text" : "mem: ${memperc}%", "color" : ${if_match ${memperc}>65}"\#DC322F"${else}"\#f2d818"${endif}, "min_width" : 25 },
   { "full_text" : "disk: ${fs_free_perc /}% ${fs_free /} ", "color" : ${if_match ${fs_free_perc}<15}"\#DC322F"${else}"\#00faaf"${endif} },
+  { "full_text" : "vol: ${exec amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}" , "color" : "\#00ffaaf"},
   { "full_text" : "${time %Y年%b%d日 %A %H:%M}", "color" : "\#268BD2" },
   { "full_text" : "|", "color" : "\#EEE8D5" }
 ],
