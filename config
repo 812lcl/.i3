@@ -13,15 +13,17 @@ set $mod Mod1
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font -wenquanyi-wenquanyi bitmap song-bold-r-normal--*-120-75-75-p-*-iso10646-1
+# font -wenquanyi-wenquanyi bitmap song-bold-r-normal--*-120-75-75-p-*-iso10646-1
+font xft:Wen Quan Yi Zen Hei Mono 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Shift+Return exec gksu gnome-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec gnome-terminal
+# bindsym $mod+Shift+Return exec gksu gnome-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+q kill
@@ -148,7 +150,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # background
-exec feh --bg-scale /home/lcl-ubuntu/Picture/Mac_book_pro_retina072.jpg
+exec feh --bg-scale /home/lcl/Pictures/Mac_book_pro_retina072.jpg
+exec fcitx
+exec nm-applet
 # exec conky -c ~/.conkycolors/conkyrc-lcl
 
 # border
@@ -163,7 +167,7 @@ for_window [class="VirtualBox"] border none
 # quick start app
 bindsym $mod+g exec google-chrome
 bindsym $mod+b exec virtualbox
-bindsym $mod+Shift+Q exec i3lock -i ~/Picture/bg.png
+bindsym $mod+Shift+Q exec i3lock -i ~/Pictures/bg.png
 
 # class color           border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef4
