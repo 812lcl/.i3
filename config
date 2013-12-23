@@ -153,6 +153,7 @@ bindsym $mod+r mode "resize"
 exec feh --bg-scale /home/lcl/Pictures/Mac_book_pro_retina072.jpg
 exec fcitx
 exec nm-applet
+exec stardic
 # exec conky -c ~/.conkycolors/conkyrc-lcl
 
 # border
