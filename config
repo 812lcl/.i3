@@ -149,7 +149,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # background
-exec feh --bg-scale /home/lcl/Picture/Sky.jpg
+exec feh --bg-scale /home/lcl/Pictures/Sky.jpg
 exec --no-startup-id nm-applet
 # exec $HOME/bin/bg/bg.sh
 # exec fcitx
@@ -168,7 +168,7 @@ for_window [class="VirtualBox"] border none
 # quick start app
 bindsym $mod+g exec google-chrome
 bindsym $mod+b exec virtualbox
-bindsym $mod+Shift+Q exec i3lock -i Picture/Sky.png
+bindsym $mod+Shift+Q exec i3lock -i Pictures/Sky.png
 
 # class color           border  backgr. text    indicator
 client.focused          #4c7899 #285577 #ffffff #2e9ef4
