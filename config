@@ -161,8 +161,8 @@ bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 new_window 1pixel
 
-for_window [class="Google-chrome"] border none
 for_window [class="VirtualBox"] border none
+for_window [class="Google-chrome"] border none
 
 # quick start app
 bindsym $mod+g exec google-chrome
